@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_margin="5dp"
+	android:gravity="center_vertical" >
+
+	<ImageButton
+		android:id="@+id/button_start"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:src="@drawable/ic_lock" />
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="5dp"
+		android:layout_toLeftOf="@+id/button_start"
+		android:gravity="center_vertical" >
+
+		<TextView
+			android:id="@+id/textview_text"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_vertical"
+			android:paddingLeft="10dp"
+			android:text="CheckedTextView"
+			android:textColor="#ffffff"
+			android:textSize="20sp" />
+	</LinearLayout>
+
+</RelativeLayout>

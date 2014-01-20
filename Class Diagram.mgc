@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="tw.edu.ntu.csie.sed.CEM.activity.ProfileActivity"
+        x="1414" y="200">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="tw.edu.ntu.csie.sed.CEM.rest.HTTPResponseReceiver"/>
+        <Communication destinationClassName="tw.edu.ntu.csie.sed.CEM.fragment.ProfileDialogFragment"/>
+    </Class>
+    <Class
+        name="tw.edu.ntu.csie.sed.CEM.adapter.EmotionInfoWindowAdapter"
+        x="366" y="677">
+        <AttributesDisplayFilter public-accepted="false"
+            private-accepted="true" protected-accepted="false"
+            default-accepted="false" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="tw.edu.ntu.csie.sed.CEM.model.EmotionBubble"
+            endpointName="bubbles" kind="Simple"/>
+    </Class>
+    <Class name="tw.edu.ntu.csie.sed.CEM.activity.SelectActivity"
+        x="1394" y="626">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="tw.edu.ntu.csie.sed.CEM.adapter.MissionDrawerAdapter"
+        x="813" y="773">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="tw.edu.ntu.csie.sed.CEM.model.Bubble"/>
+        <Communication destinationClassName="tw.edu.ntu.csie.sed.CEM.model.MissionBubble"/>
+    </Class>
+    <Class name="tw.edu.ntu.csie.sed.CEM.model.Bubble" x="143" y="788">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="true"
+            accessors-accepted="true" constructors-accepted="false"/>
+    </Class>
+    <Class name="tw.edu.ntu.csie.sed.CEM.model.MissionBubble" x="1" y="972">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="tw.edu.ntu.csie.sed.CEM.model.Bubble"/>
+    </Class>
+    <Class name="tw.edu.ntu.csie.sed.CEM.rest.APIHelper" x="485" y="-61">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="tw.edu.ntu.csie.sed.CEM.rest.HTTPResponseReceiver"/>
+    </Class>
+    <Class name="tw.edu.ntu.csie.sed.CEM.adapter.ScopeBubbleFilter"
+        x="420" y="1236">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="tw.edu.ntu.csie.sed.CEM.adapter.BubbleFilterDecorator"/>
+        <Association
+            destinationClassName="tw.edu.ntu.csie.sed.CEM.adapter.BubbleSelector"
+            endpointName="selector" kind="Simple">
+            <Point x="772" y="1277"/>
+        </Association>
+        <Communication destinationClassName="tw.edu.ntu.csie.sed.CEM.adapter.BubbleSelector"/>
+    </Class>
+    <Class name="tw.edu.ntu.csie.sed.CEM.fragment.ProfileDialogFragment"
+        x="1441" y="471">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="tw.edu.ntu.csie.sed.CEM.model.EmotionBubble" x="222" y="958">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="tw.edu.ntu.csie.sed.CEM.model.Bubble"/>
+    </Class>
+    <Class
+        name="tw.edu.ntu.csie.sed.CEM.fragment.SimpleMapFragment.OnMapUpdatedListener"
+        x="205" y="585">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="tw.edu.ntu.csie.sed.CEM.adapter.BubbleFilterDecorator"
+        x="421" y="1132">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="tw.edu.ntu.csie.sed.CEM.adapter.BubbleSelector"/>
+        <Association
+            destinationClassName="tw.edu.ntu.csie.sed.CEM.adapter.BubbleSelector"
+            endpointName="selector" kind="Aggregation">
+            <Point x="557" y="991"/>
+        </Association>
+        <Communication destinationClassName="tw.edu.ntu.csie.sed.CEM.adapter.BubbleSelector"/>
+    </Class>
+    <Class name="tw.edu.ntu.csie.sed.CEM.fragment.SimpleMapFragment"
+        x="424" y="251">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="tw.edu.ntu.csie.sed.CEM.rest.HTTPResponseReceiver"/>
+        <Association
+            destinationClassName="tw.edu.ntu.csie.sed.CEM.adapter.EmotionInfoWindowAdapter"
+            endpointName="mEmotionInfoWindowAdapter" kind="Simple"/>
+        <Association
+            destinationClassName="tw.edu.ntu.csie.sed.CEM.fragment.CommentDialogFragment"
+            endpointName="mDialog" kind="Simple"/>
+        <Association
+            destinationClassName="tw.edu.ntu.csie.sed.CEM.fragment.SimpleMapFragment.OnMapUpdatedListener"
+            endpointName="mListener" kind="Simple"/>
+        <Association
+            destinationClassName="tw.edu.ntu.csie.sed.CEM.rest.APIHelper"
+            endpointName="mAPIHelper" kind="Simple"/>
+        <Communication destinationClassName="tw.edu.ntu.csie.sed.CEM.adapter.EmotionInfoWindowAdapter"/>
+        <Communication destinationClassName="tw.edu.ntu.csie.sed.CEM.adapter.EmotionDrawerAdapter"/>
+        <Communication destinationClassName="tw.edu.ntu.csie.sed.CEM.fragment.CommentDialogFragment"/>
+        <Communication destinationClassName="tw.edu.ntu.csie.sed.CEM.adapter.MissionDrawerAdapter"/>
+        <Communication destinationClassName="tw.edu.ntu.csie.sed.CEM.model.MissionBubble"/>
+        <Communication destinationClassName="tw.edu.ntu.csie.sed.CEM.rest.APIHelper"/>
+        <Communication destinationClassName="tw.edu.ntu.csie.sed.CEM.model.EmotionBubble"/>
+        <Communication destinationClassName="tw.edu.ntu.csie.sed.CEM.fragment.SimpleMapFragment.OnMapUpdatedListener"/>
+    </Class>
+    <Class name="tw.edu.ntu.csie.sed.CEM.adapter.EmotionDrawerAdapter"
+        x="518" y="787">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="tw.edu.ntu.csie.sed.CEM.model.Bubble"
+            endpointName="test" kind="Aggregation"/>
+        <Communication destinationClassName="tw.edu.ntu.csie.sed.CEM.adapter.BubbleSelector"/>
+        <Communication destinationClassName="tw.edu.ntu.csie.sed.CEM.adapter.EmotionBubbleSelector"/>
+    </Class>
+    <Class name="tw.edu.ntu.csie.sed.CEM.rest.RESTService" x="223" y="-86">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="true"/>
+        <MethodDisplayFilter public-accepted="false"
+            private-accepted="false" protected-accepted="true"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="tw.edu.ntu.csie.sed.CEM.activity.MainActivity" x="-45" y="225">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="tw.edu.ntu.csie.sed.CEM.rest.HTTPResponseReceiver"/>
+        <Extension destinationClassName="tw.edu.ntu.csie.sed.CEM.fragment.SimpleMapFragment.OnMapUpdatedListener"/>
+        <Association
+            destinationClassName="tw.edu.ntu.csie.sed.CEM.fragment.SimpleMapFragment"
+            endpointName="mMapFragment" kind="Simple"/>
+        <Association
+            destinationClassName="tw.edu.ntu.csie.sed.CEM.rest.APIHelper"
+            endpointName="mAPIHelper" kind="Simple"/>
+        <Communication destinationClassName="tw.edu.ntu.csie.sed.CEM.fragment.SimpleMapFragment"/>
+    </Class>
+    <Class name="tw.edu.ntu.csie.sed.CEM.fragment.CommentDialogFragment"
+        x="819" y="301">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="tw.edu.ntu.csie.sed.CEM.adapter.MissionBubbleSelector"
+        x="1091" y="1075">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="tw.edu.ntu.csie.sed.CEM.adapter.BubbleSelector"/>
+    </Class>
+    <Class name="tw.edu.ntu.csie.sed.CEM.rest.HTTPResponseReceiver"
+        x="987" y="-28">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="tw.edu.ntu.csie.sed.CEM.adapter.BubbleSelector" x="725" y="967">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="tw.edu.ntu.csie.sed.CEM.activity.CheckinActivity"
+        x="1054" y="209">
+        <AttributesDisplayFilter public-accepted="false"
+            private-accepted="true" protected-accepted="false"
+            default-accepted="false" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="tw.edu.ntu.csie.sed.CEM.rest.HTTPResponseReceiver"/>
+        <Association
+            destinationClassName="tw.edu.ntu.csie.sed.CEM.rest.APIHelper"
+            endpointName="mHelper" kind="Simple"/>
+        <Communication destinationClassName="tw.edu.ntu.csie.sed.CEM.rest.APIHelper"/>
+    </Class>
+    <Class name="tw.edu.ntu.csie.sed.CEM.adapter.EmotionBubbleSelector"
+        x="807" y="1073">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="tw.edu.ntu.csie.sed.CEM.adapter.BubbleSelector"/>
+    </Class>
+</ClassDiagram>

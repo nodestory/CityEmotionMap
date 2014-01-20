@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@drawable/custom_info_bubble"
+	android:orientation="horizontal" >
+
+	<ImageView
+		android:id="@+id/imageview_emotion"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_marginRight="5dp"
+		android:adjustViewBounds="true"
+		android:src="@drawable/ic_happy" >
+
+	</ImageView>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical" >
+
+		<TextView
+			android:id="@+id/textview_message"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:ellipsize="end"
+			android:singleLine="true"
+			android:text="message"
+			android:textColor="#ff000000"
+			android:textSize="14sp"
+			android:textStyle="bold" />
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal" >
+
+			<ImageView
+				android:id="@+id/imageview_place"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/ic_place" />
+
+			<TextView
+				android:id="@+id/textview_place"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:layout_toRightOf="@+id/imageview_place"
+				android:gravity="center_vertical"
+				android:singleLine="true"
+				android:text="place"
+				android:textColor="#ff7f7f7f"
+				android:textSize="14sp" />
+
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

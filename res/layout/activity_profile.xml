@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:facebook="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#B8C6AD"
+	android:gravity="top|center"
+	android:orientation="vertical" >
+
+    <LinearLayout
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="15dp"
+    	android:layout_marginRight="15dp"
+    	android:layout_marginTop="15dp"
+    	android:orientation="horizontal" >
+
+        <LinearLayout
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="bottom"
+        	android:layout_marginRight="15dp"
+        	android:background="#ffffff"
+        	android:gravity="center"
+        	android:orientation="vertical" >
+
+        	<com.facebook.widget.ProfilePictureView
+        		android:id="@+id/profilepictureview"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_marginLeft="2dp"
+        		android:layout_marginRight="2dp"
+        		android:layout_marginTop="2dp"
+        		android:gravity="center_horizontal"
+        		android:paddingBottom="5dp"
+        		android:paddingLeft="5dp"
+        		android:paddingRight="5dp"
+        		android:paddingTop="5dp"
+        		facebook:preset_size="normal" >
+        	</com.facebook.widget.ProfilePictureView>
+
+        	<TextView
+        		android:id="@+id/textview_username"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:layout_marginBottom="2dp"
+        		android:gravity="center"
+        		android:text="Linzy"
+        		android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="bottom"
+        	android:background="#FFFFFF"
+        	android:gravity="center"
+        	android:orientation="vertical" >
+
+            <LinearLayout
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:background="#F4E47C"
+            	android:orientation="vertical" >
+
+                <TextView
+                	android:id="@+id/textView1"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:layout_gravity="center"
+                	android:text="選擇時間範圍"
+                	android:textColorHint="#B99D4A"
+                	android:textSize="16sp" />
+
+            </LinearLayout>
+
+        	<RadioGroup
+        		android:id="@+id/group_scope"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_marginLeft="3dp"
+        		android:layout_marginRight="1dp"
+        		android:layout_marginTop="5dp"
+        		android:orientation="horizontal" >
+
+        		<RadioButton
+        			android:id="@+id/radiobutton_day"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:checked="true"
+        			android:text="日" />
+
+        		<RadioButton
+        			android:id="@+id/radiobutton_week"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:text="週" />
+
+        		<RadioButton
+        			android:id="@+id/radiobutton_month"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_marginRight="3dp"
+        			android:text="月" />
+
+        	</RadioGroup>
+
+        	<Button
+        		android:id="@+id/button_analyze"
+        		style="?android:attr/buttonStyleSmall"
+        		android:layout_width="wrap_content"
+        		android:layout_height="30dp"
+        		android:layout_gravity="right"
+        		android:layout_marginBottom="5dp"
+        		android:layout_marginRight="5dp"
+        		android:background="#6BB385"
+        		android:drawableLeft="@drawable/ic_action_analysis"
+        		android:paddingLeft="3dp"
+        		android:paddingRight="5dp"
+        		android:text="開始分析"
+        		android:textColor="#FFFFFF"
+        		android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="top|center"
+		android:orientation="vertical" >
+
+		<LinearLayout
+			android:id="@+id/result"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="15dp"
+			android:layout_marginRight="15dp"
+			android:layout_marginTop="10dp"
+			android:background="#FFFFFF"
+			android:orientation="vertical" >
+
+			<ProgressBar
+				android:id="@+id/progressbar"
+				style="?android:attr/progressBarStyleLarge"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center" />
+
+			<LinearLayout
+				android:id="@+id/chart"
+				android:layout_width="fill_parent"
+				android:layout_height="0dip"
+				android:layout_weight="1"
+				android:orientation="horizontal" >
+			</LinearLayout>
+		</LinearLayout>
+
+		<com.facebook.widget.LoginButton
+			android:id="@+id/login_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp" />
+	</LinearLayout>
+
+</LinearLayout>

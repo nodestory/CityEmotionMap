@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="tw.edu.ntu.csie.sed.CEM.service.APIResultReceiver"
+        x="710" y="54">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="tw.edu.ntu.csie.sed.CEM.service.APIResultReceiver.Receiver"
+            endpointName="mReceiver" kind="Simple"/>
+        <Communication destinationClassName="tw.edu.ntu.csie.sed.CEM.service.APIResultReceiver.Receiver"/>
+    </Class>
+    <Class name="tw.edu.ntu.csie.sed.CEM.fragment.EmotionMapFragment"
+        x="478" y="574">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="tw.edu.ntu.csie.sed.CEM.adapter.EmotionDrawerController"
+            endpointName="mEmotionDrawerController" kind="Simple"/>
+        <Association
+            destinationClassName="tw.edu.ntu.csie.sed.CEM.adapter.EmotionInfoWindowAdapter"
+            endpointName="mEmotionInfoWindowAdapter" kind="Simple"/>
+        <Association
+            destinationClassName="tw.edu.ntu.csie.sed.CEM.adapter.MissionDrawerController"
+            endpointName="mMissionDrawerController" kind="Simple"/>
+        <Association
+            destinationClassName="tw.edu.ntu.csie.sed.CEM.fragment.EmotionMapFragment.OnMapUpdatedListener"
+            endpointName="mListener" kind="Simple"/>
+        <Communication destinationClassName="tw.edu.ntu.csie.sed.CEM.adapter.EmotionInfoWindowAdapter"/>
+        <Communication destinationClassName="tw.edu.ntu.csie.sed.CEM.fragment.CommentDialogFragment"/>
+        <Communication destinationClassName="tw.edu.ntu.csie.sed.CEM.fragment.EmotionMapFragment.OnMapUpdatedListener"/>
+        <Communication destinationClassName="tw.edu.ntu.csie.sed.CEM.adapter.EmotionDrawerController"/>
+    </Class>
+</ClassDiagram>

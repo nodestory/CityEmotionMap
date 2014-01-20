@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">City Emotion Map</string>
+	<string name="hello_world">Hello world!</string>
+	<string name="menuitem_profile">User Profile</string>
+	<string name="menuitem_checkin">Check-in!</string>
+	<string name="app_id">325601000848161</string>
+	<string name="google_api_key">AIzaSyAyIV69IU4WDlFZ2RDt_xweKkb5KNoMB9Y</string>
+	<string name="set_scope">Set Scope</string>
+	<string name="set_emotion">Set Emotion</string>
+
+	<string-array name="emotion_name_array">
+		<item>開心</item>
+		<item>怒</item>
+		<item>哭哭</item>
+		<item>囧</item>
+		<item>激嗨</item>
+		<item>熱血</item>
+		<item>崩潰</item>
+	</string-array>
+	<string-array name="scope_array">
+		<item>公開</item>
+		<item>僅限朋友</item>
+	</string-array>
+	<string-array name="range_array">
+		<item>過去一天</item>
+		<item>過去一週</item>
+		<item>過去一月</item>
+	</string-array>
+	<string-array name="emotion_icon_array">
+		<item>@drawable/ic_happy</item>
+		<item>@drawable/ic_angry</item>
+		<item>@drawable/ic_cry</item>
+		<item>@drawable/ic_joun</item>
+		<item>@drawable/ic_high</item>
+		<item>@drawable/ic_go</item>
+		<item>@drawable/ic_breakdown</item>
+	</string-array>
+	<string-array name="mission_icon_array">
+		<item>@drawable/ic_android2</item>
+		<item>@drawable/ic_android2</item>
+		<item>@drawable/ic_android2</item>
+	</string-array>
+
+	<string name="emotion_dialog_title">選擇情緒</string>
+	<string name="card_place">位置</string>
+	<string name="card_message">為什麼呢？</string>
+	<string name="card_color">顏色</string>
+	<string name="card_emotion">情緒</string>
+	<string name="menuitem_cancel">取消</string>
+	<string name="menuitem_share">分享</string>
+	<string name="menuitem_add_comment">打氣</string>
+	<string name="menuitem_view_comments">看更多留言</string>
+	<string name="btn_send">發送</string>
+	<string name="dialog_title">no</string>
+
+	<string-array name="layers_array">
+		<item>normal</item>
+		<item>hybrid</item>
+		<item>satellite</item>
+		<item>terrain</item>
+	</string-array>
+	<string name="loading">Loading...</string>
+	<string name="is_frlend_only">朋友限定</string>
+
+</resources>
